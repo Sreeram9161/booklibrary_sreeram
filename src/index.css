@@ -1,0 +1,24 @@
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --accent: #2b6cb0;
+  --muted: #6b7280;
+}
+*{box-sizing:border-box}
+body,html,#root{height:100%;margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:#111}
+.container{max-width:1000px;margin:24px auto;padding:16px}
+.header{text-align:center;margin-bottom:20px}
+.header h1{margin:0;font-size:2.1rem;color:var(--accent)}
+.subtitle{margin:6px 0;color:var(--muted)}
+.summary{display:flex;gap:24px;justify-content:center;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);border:1px solid rgba(15,23,42,0.04)}
+.card-title{margin:0 0 8px 0;font-size:1.1rem}
+.card-author{margin:0 0 6px 0;color:var(--muted);font-weight:600}
+.card-year{font-weight:400;color:#94a3b8;margin-left:6px;font-size:0.95rem}
+.card-genre{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef2ff;color:#1e3a8a;font-size:0.8rem;margin-bottom:10px}
+.card-desc{margin:8px 0 0 0;color:#334155;line-height:1.3}
+.footer{text-align:center;margin-top:24px;color:var(--muted);font-size:0.95rem}
+@media (max-width:520px){
+  .summary{flex-direction:column;align-items:center}
+}
